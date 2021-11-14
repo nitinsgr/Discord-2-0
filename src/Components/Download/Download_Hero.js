@@ -1,16 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Illustration from '../../Images/Illustration6.png'
+
 const MainWrapper = styled.div`
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: center;
 background-color: #23272a;
 height: 60vh;
 `
 
-const ImageWrapper = styled.div``
+const ImageWrapper = styled.div`
+transform: translateX(-200px);
+
+`
 
 const ContentWrapper = styled.div`
 display: flex;
@@ -49,6 +54,9 @@ background-color: #5865F2;
 const ButtonWrapper = styled.div`
 margin-top: 20px;
 `
+const Image = styled.img`
+width: 100%;
+`
 
 const Download_Hero = () => {
     return (
@@ -69,17 +77,12 @@ const Download_Hero = () => {
                     Download for Windows
                 </Button>
                 </ButtonWrapper>
-               
             </ContentWrapper>
-            
 
-
-            <ImageWrapper>
-                s
-
+            <ImageWrapper className="">
+                <Image src={Illustration}/>
             </ImageWrapper>
 
-          
         </MainWrapper>
       
     )

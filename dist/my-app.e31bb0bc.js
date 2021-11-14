@@ -41717,7 +41717,9 @@ const DownloadHeader = () => {
 
 var _default = DownloadHeader;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../Images/discord.png":"src/Images/discord.png","@heroicons/react/outline":"node_modules/@heroicons/react/outline/esm/index.js","react-router-dom":"node_modules/react-router-dom/index.js"}],"src/Components/Download/Download_Hero.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../Images/discord.png":"src/Images/discord.png","@heroicons/react/outline":"node_modules/@heroicons/react/outline/esm/index.js","react-router-dom":"node_modules/react-router-dom/index.js"}],"src/Images/Illustration6.png":[function(require,module,exports) {
+module.exports = "/Illustration6.93551413.png";
+},{}],"src/Components/Download/Download_Hero.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41729,17 +41731,22 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+var _Illustration = _interopRequireDefault(require("../../Images/Illustration6.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const MainWrapper = _styledComponents.default.div`
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: center;
 background-color: #23272a;
 height: 60vh;
 `;
-const ImageWrapper = _styledComponents.default.div``;
+const ImageWrapper = _styledComponents.default.div`
+transform: translateX(-200px);
+
+`;
 const ContentWrapper = _styledComponents.default.div`
 display: flex;
 flex-direction: column;
@@ -41773,14 +41780,81 @@ background-color: #5865F2;
 const ButtonWrapper = _styledComponents.default.div`
 margin-top: 20px;
 `;
+const Image = _styledComponents.default.img`
+width: 100%;
+`;
 
 const Download_Hero = () => {
-  return /*#__PURE__*/_react.default.createElement(MainWrapper, null, /*#__PURE__*/_react.default.createElement(ContentWrapper, null, /*#__PURE__*/_react.default.createElement(ContentHeading, null, "GET DISCORD ", /*#__PURE__*/_react.default.createElement("br", null), "FOR ANY ", /*#__PURE__*/_react.default.createElement("br", null), "DEVICE"), /*#__PURE__*/_react.default.createElement(ContentSubHeadng, null, "An adventure awaits. Hang out with your friends on our desktop app and keep the conversation going on mobile."), /*#__PURE__*/_react.default.createElement(ButtonWrapper, null, /*#__PURE__*/_react.default.createElement(Button, null, "Download for Windows"))), /*#__PURE__*/_react.default.createElement(ImageWrapper, null, "s"));
+  return /*#__PURE__*/_react.default.createElement(MainWrapper, null, /*#__PURE__*/_react.default.createElement(ContentWrapper, null, /*#__PURE__*/_react.default.createElement(ContentHeading, null, "GET DISCORD ", /*#__PURE__*/_react.default.createElement("br", null), "FOR ANY ", /*#__PURE__*/_react.default.createElement("br", null), "DEVICE"), /*#__PURE__*/_react.default.createElement(ContentSubHeadng, null, "An adventure awaits. Hang out with your friends on our desktop app and keep the conversation going on mobile."), /*#__PURE__*/_react.default.createElement(ButtonWrapper, null, /*#__PURE__*/_react.default.createElement(Button, null, "Download for Windows"))), /*#__PURE__*/_react.default.createElement(ImageWrapper, {
+    className: ""
+  }, /*#__PURE__*/_react.default.createElement(Image, {
+    src: _Illustration.default
+  })));
 };
 
 var _default = Download_Hero;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/Components/Download/Download_Page.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../Images/Illustration6.png":"src/Images/Illustration6.png"}],"src/Images/CardIos.png":[function(require,module,exports) {
+module.exports = "/CardIos.ad9e413f.png";
+},{}],"src/Components/Download/Masonry_Layout.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _CardIos = _interopRequireDefault(require("../../Images/CardIos.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const MainWrapper = _styledComponents.default.div`
+height: 80vh;
+display: flex;
+flex-direction: row;
+`;
+const CardIos = _styledComponents.default.div`
+margin-top: 20px;
+margin-left: 20px;
+height: 600px;
+width: 400px;
+border-radius: 20px;
+background-color: #F9F9F9;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+`;
+const CardIosHeading = _styledComponents.default.h2`
+font-size: 24px;
+font-weight: 800;
+
+`;
+const CardIosButton = _styledComponents.default.button`
+padding: 12px 16px;
+color: white;
+background-color: black;
+border-radius: 50px;
+cursor: pointer;
+`;
+const CardIosImage = _styledComponents.default.img`
+width: 70%;
+margin-top: 40px;
+`;
+
+const Masonry_Layout = () => {
+  return /*#__PURE__*/_react.default.createElement(MainWrapper, null, /*#__PURE__*/_react.default.createElement(CardIos, null, /*#__PURE__*/_react.default.createElement(CardIosHeading, null, "IOS"), /*#__PURE__*/_react.default.createElement(CardIosButton, null, "Download"), /*#__PURE__*/_react.default.createElement(CardIosImage, {
+    src: _CardIos.default
+  })));
+};
+
+var _default = Masonry_Layout;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../Images/CardIos.png":"src/Images/CardIos.png"}],"src/Components/Download/Download_Page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41794,15 +41868,17 @@ var _Download_header = _interopRequireDefault(require("./Download_header"));
 
 var _Download_Hero = _interopRequireDefault(require("./Download_Hero"));
 
+var _Masonry_Layout = _interopRequireDefault(require("./Masonry_Layout"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const Download_Page = () => {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Download_header.default, null), /*#__PURE__*/_react.default.createElement(_Download_Hero.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Download_header.default, null), /*#__PURE__*/_react.default.createElement(_Download_Hero.default, null), /*#__PURE__*/_react.default.createElement(_Masonry_Layout.default, null));
 };
 
 var _default = Download_Page;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./Download_header":"src/Components/Download/Download_header.js","./Download_Hero":"src/Components/Download/Download_Hero.js"}],"src/Components/Footer/FooterElements.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./Download_header":"src/Components/Download/Download_header.js","./Download_Hero":"src/Components/Download/Download_Hero.js","./Masonry_Layout":"src/Components/Download/Masonry_Layout.js"}],"src/Components/Footer/FooterElements.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -59273,7 +59349,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59604" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63868" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
