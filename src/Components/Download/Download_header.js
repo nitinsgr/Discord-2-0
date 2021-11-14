@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Logo from '../Images/Discord.png'
+import Logo from '../../Images/discord.png'
 import {MenuIcon} from '@heroicons/react/outline'
 import {Link} from 'react-router-dom'
 const Image = styled.img`
@@ -34,9 +34,9 @@ border-radius: 50px;
 `
 
 
-const Header = () => {
+const DownloadHeader = () => {
   return (
-   <header style={{background: "#404eed", outline: "none", border: 0}} className="flex items-center py-4 px-6 outline-none justify-around">
+   <header style={{background: "#23272a", outline: "none", border: 0}} className="flex items-center py-4 px-6 outline-none justify-around">
       <a href="/">
         <Image src={Logo}
         alt=""
@@ -61,4 +61,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default DownloadHeader

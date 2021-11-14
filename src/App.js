@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
+import Download_Page from './Components/Download/Download_Page';
 import Footer from './Components/Footer/Footer';
 import Getting_started from './Components/Get_Started/Getting_started';
 import Header from './Components/Header';
@@ -13,7 +14,6 @@ function App() {
     <div>
      <Routes>
      <Route path="/" element={<Header/>}/>
-    
    </Routes>
    <Routes>
      <Route path="/" element={<Hero/>}/>
@@ -37,6 +37,12 @@ function App() {
    <Routes>
    <Route path="/" element={<Footer/>}/>
    </Routes>
+
+   <Routes>
+   <Route path="Download" element={<Download_Page/>}/>
+   </Routes>
+
+
       </div>
   
   );

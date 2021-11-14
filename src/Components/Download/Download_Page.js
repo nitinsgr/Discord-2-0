@@ -1,0 +1,14 @@
+import React from 'react'
+import DownloadHeader from './Download_header';
+import Download_Hero from './Download_Hero';
+
+const Download_Page = () => {
+    return (
+      <>
+        <DownloadHeader/>
+        <Download_Hero/>
+      </>
+    )
+}
+
+export default Download_Page
