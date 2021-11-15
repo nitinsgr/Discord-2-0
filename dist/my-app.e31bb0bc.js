@@ -41706,7 +41706,9 @@ const DownloadHeader = () => {
     className: "hidden lg:flex space-x-6 text-white"
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/Download"
-  }, /*#__PURE__*/_react.default.createElement(MenuLink, null, "Download")), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Nitro"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Safety"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Support"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Blog"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Careers")), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement(MenuLink, null, "Download")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/Nitro"
+  }, /*#__PURE__*/_react.default.createElement(MenuLink, null, "Nitro")), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Safety"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Support"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Blog"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Careers")), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex"
   }, /*#__PURE__*/_react.default.createElement(Button, {
     className: "px-4"
@@ -58914,7 +58916,9 @@ const Header = () => {
     className: "hidden lg:flex space-x-6 text-white"
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/Download"
-  }, /*#__PURE__*/_react.default.createElement(MenuLink, null, "Download")), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Nitro"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Safety"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Support"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Blog"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Careers")), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement(MenuLink, null, "Download")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/Nitro"
+  }, /*#__PURE__*/_react.default.createElement(MenuLink, null, "Nitro")), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Safety"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Support"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Blog"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Careers")), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex"
   }, /*#__PURE__*/_react.default.createElement(Button, {
     className: "px-4"
@@ -59091,7 +59095,281 @@ function Hero() {
     className: ""
   }, "Open Discord in your Browser")))));
 }
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Images/background.png":"src/Images/background.png","../Images/illustation.png":"src/Images/illustation.png"}],"src/Images/illustration2.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Images/background.png":"src/Images/background.png","../Images/illustation.png":"src/Images/illustation.png"}],"src/Images/Nitro.png":[function(require,module,exports) {
+module.exports = "/Nitro.473f71f8.png";
+},{}],"src/Components/Nitro/Nitro_Header/Header.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _Nitro = _interopRequireDefault(require("../../../Images/Nitro.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const Container = _styledComponents.default.div`
+
+`;
+const MainWrapper = _styledComponents.default.div`
+display:flex;
+height: 80vh;
+background: linear-gradient(45deg, #B983FF, #5865F2);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 100px;
+`;
+const ContentWrapper = _styledComponents.default.p`
+width: 50%;
+font-size: 20px;
+color : white;
+padding-top: 20px;
+`;
+const ButtonWrapper = _styledComponents.default.div`
+display: flex;
+flex-direction: row;
+`;
+const YearButton = _styledComponents.default.button`
+font-size: 20px;
+background-color: black;
+color : white;
+padding: 15px 30px;
+border-radius: 50px;
+
+`;
+const MonthButton = _styledComponents.default.button`
+font-size: 20px;
+color: white;
+background-color: black;
+border-radius: 50px;
+padding: 15px 30px;
+`;
+const ImageContainer = _styledComponents.default.img`
+transform: translateY(-50px);
+`;
+const PerkContainer = _styledComponents.default.div`
+display: flex;
+height: 120vh;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 50px;
+
+
+`;
+const PerkHeading = _styledComponents.default.h1`
+font-family: 'Paytone One', sans-serif;
+font-weight: 900;
+font-size: 40px;
+width: 60%;
+text-align: center;
+`;
+const EmojiContainer = _styledComponents.default.div`
+font-size: 15px;
+background: linear-gradient(#2FDD92, #B1E693);
+border-radius: 20px ;
+width:350px;
+height: 320px;
+
+display: flex;
+padding: 20px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+font-weight: 800;
+`;
+const GridContainer = _styledComponents.default.div``;
+const PersonalProfileContainer = _styledComponents.default.div`
+font-size: 15px;
+color: black;
+background: linear-gradient(#5865F2, #5C7AEA);
+font-weight: 800;
+border-radius: 20px ;
+padding: 20px;
+width:350px;
+height: 320px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+
+`;
+const SupportContainer = _styledComponents.default.div`
+font-size: 15px;
+color: black;
+background: linear-gradient(#3E00FF, #5C7AEA);
+border-radius: 20px ;
+width:350px;
+height: 320px;
+
+display: flex;
+font-weight: 800;
+padding: 20px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+
+`;
+const RepContainer = _styledComponents.default.div`
+font-size: 15px;
+padding: 20px;
+color: black;
+background: linear-gradient(#B983FF, #94B3FD);
+border-radius: 20px ;
+width:350px;
+height: 320px;
+
+font-weight: 800;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+`;
+const UploadContainer = _styledComponents.default.div`
+font-size: 15px;
+color: black;
+background: linear-gradient(#FFD371, #FF4848);
+border-radius: 20px ;
+width:350px;
+font-weight: 800;
+height: 320px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+`;
+const VideoContainer = _styledComponents.default.div`
+font-size: 15px;
+color: black;
+border-radius: 20px ;
+font-weight: 800;
+background: linear-gradient(#ED50F1, #FDB9FC);
+width:350px;
+height: 320px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+`;
+
+const Nitro_Header = () => {
+  return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(MainWrapper, null, /*#__PURE__*/_react.default.createElement(ImageContainer, {
+    src: _Nitro.default
+  }), /*#__PURE__*/_react.default.createElement(ContentWrapper, null, "Get an enhanced Discord experience for one low monthly cost. Upgrade your emoji, enjoy bigger file uploads, stand out in your favorite Discords, and more."), /*#__PURE__*/_react.default.createElement(ButtonWrapper, {
+    className: "gap-5 pt-12"
+  }, /*#__PURE__*/_react.default.createElement(YearButton, null, "$99.99 per year"), /*#__PURE__*/_react.default.createElement(MonthButton, null, "$9.99 per month"))), /*#__PURE__*/_react.default.createElement(PerkContainer, null, /*#__PURE__*/_react.default.createElement(PerkHeading, null, "DISCORD NITRO ENHANCES YOUR ALL-IN-ONE DISCORD VOICE, VIDEO, AND TEXT CHAT."), /*#__PURE__*/_react.default.createElement(GridContainer, null, /*#__PURE__*/_react.default.createElement("div", {
+    class: "grid grid-cols-3 gap-5 pt-10"
+  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(EmojiContainer, null, /*#__PURE__*/_react.default.createElement("p", null, "Better Emoji"), /*#__PURE__*/_react.default.createElement("p", null, "Collect a make your own custom and animated emojis"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(PersonalProfileContainer, null, /*#__PURE__*/_react.default.createElement("p", null, "Personal Profile"), /*#__PURE__*/_react.default.createElement("p", null, "Use an animated avatar and claim a custom tag"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(SupportContainer, null, /*#__PURE__*/_react.default.createElement("p", null, "Support a server"), /*#__PURE__*/_react.default.createElement("p", null, "Get 2 Server Boost and 30% off extra boosts"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(RepContainer, null, /*#__PURE__*/_react.default.createElement("p", null, "Rep Your Support"), /*#__PURE__*/_react.default.createElement("p", null, "Profile badge how long you've supported Discord"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(UploadContainer, null, /*#__PURE__*/_react.default.createElement("p", null, "Bigger Uploads"), /*#__PURE__*/_react.default.createElement("p", null, "100Mb upload size for high-quality file sharing"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(VideoContainer, null, /*#__PURE__*/_react.default.createElement("p", null, "HD Video"), /*#__PURE__*/_react.default.createElement("p", null, "Hi-res video, screenshare, and Go Live streaming.")))))));
+};
+
+var _default = Nitro_Header;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../../Images/Nitro.png":"src/Images/Nitro.png"}],"src/Images/Discord-black.png":[function(require,module,exports) {
+module.exports = "/Discord-black.30bbd6a6.png";
+},{}],"src/Components/Nitro/Nitro_Page.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Header = _interopRequireDefault(require("./Nitro_Header/Header"));
+
+var _DiscordBlack = _interopRequireDefault(require("../../Images/Discord-black.png"));
+
+var _outline = require("@heroicons/react/outline");
+
+var _reactRouterDom = require("react-router-dom");
+
+var _Footer = _interopRequireDefault(require("../Footer/Footer"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const Image = _styledComponents.default.img`
+
+`;
+const MenuLink = _styledComponents.default.a`
+color: black;
+font-weight: 100;
+font-family: 'Chivo', sans-serif;
+
+&:hover{
+  text-decoration: underline;
+  cursor: pointer;
+ 
+}
+`;
+const Button = _styledComponents.default.button`
+padding: 10px 22px;
+background-color: black;
+color: white;
+outline: none;
+border-radius: 50px;
+
+&:hover{
+  box-shadow: 1px 2px 5px 2px black;
+  transition: 200ms ease-in-out;
+}
+
+`;
+
+const Nitro_Page = () => {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(Navbar, null), /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+};
+
+const Navbar = () => {
+  return /*#__PURE__*/_react.default.createElement("header", {
+    style: {
+      backgroundColor: "linear-gradient(#B983FF, #9198e5);",
+      outline: "none",
+      border: 0
+    },
+    className: "flex items-center py-4 px-6 outline-none justify-around text-black"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/"
+  }, /*#__PURE__*/_react.default.createElement(Image, {
+    src: _DiscordBlack.default,
+    alt: "",
+    className: "w-32 h-12 object-contain"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "hidden lg:flex space-x-6 text-white"
+  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/Download"
+  }, /*#__PURE__*/_react.default.createElement(MenuLink, null, "Download")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/Nitro"
+  }, /*#__PURE__*/_react.default.createElement(MenuLink, null, "Nitro")), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Safety"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Support"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Blog"), /*#__PURE__*/_react.default.createElement(MenuLink, null, "Careers")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "flex"
+  }, /*#__PURE__*/_react.default.createElement(Button, {
+    className: "px-4"
+  }, "Login"), /*#__PURE__*/_react.default.createElement(_outline.MenuIcon, {
+    className: "h-12 text-white cursor-pointer lg:hidden flex py-1 px-4 space-x-8"
+  })));
+};
+
+var _default = Nitro_Page;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./Nitro_Header/Header":"src/Components/Nitro/Nitro_Header/Header.js","../../Images/Discord-black.png":"src/Images/Discord-black.png","@heroicons/react/outline":"node_modules/@heroicons/react/outline/esm/index.js","react-router-dom":"node_modules/react-router-dom/index.js","../Footer/Footer":"src/Components/Footer/Footer.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/Images/illustration2.png":[function(require,module,exports) {
 module.exports = "/illustration2.1df7d786.png";
 },{}],"src/Components/Onboarding/onboarding_group.js":[function(require,module,exports) {
 "use strict";
@@ -59312,6 +59590,8 @@ var _Header = _interopRequireDefault(require("./Components/Header"));
 
 var _Hero = _interopRequireDefault(require("./Components/Hero"));
 
+var _Nitro_Page = _interopRequireDefault(require("./Components/Nitro/Nitro_Page"));
+
 var _onboarding_group = _interopRequireDefault(require("./Components/Onboarding/onboarding_group"));
 
 var _onboarding_moderation = _interopRequireDefault(require("./Components/Onboarding/onboarding_moderation"));
@@ -59345,12 +59625,15 @@ function App() {
   })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Routes, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "Download",
     element: /*#__PURE__*/_react.default.createElement(_Download_Page.default, null)
+  })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Routes, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "Nitro",
+    element: /*#__PURE__*/_react.default.createElement(_Nitro_Page.default, null)
   })));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/index.js","./Components/Download/Download_Page":"src/Components/Download/Download_Page.js","./Components/Footer/Footer":"src/Components/Footer/Footer.js","./Components/Get_Started/Getting_started":"src/Components/Get_Started/Getting_started.js","./Components/Header":"src/Components/Header.js","./Components/Hero":"src/Components/Hero.js","./Components/Onboarding/onboarding_group":"src/Components/Onboarding/onboarding_group.js","./Components/Onboarding/onboarding_moderation":"src/Components/Onboarding/onboarding_moderation.js","./Components/Onboarding/onboarding_voice":"src/Components/Onboarding/onboarding_voice.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/index.js","./Components/Download/Download_Page":"src/Components/Download/Download_Page.js","./Components/Footer/Footer":"src/Components/Footer/Footer.js","./Components/Get_Started/Getting_started":"src/Components/Get_Started/Getting_started.js","./Components/Header":"src/Components/Header.js","./Components/Hero":"src/Components/Hero.js","./Components/Nitro/Nitro_Page":"src/Components/Nitro/Nitro_Page.js","./Components/Onboarding/onboarding_group":"src/Components/Onboarding/onboarding_group.js","./Components/Onboarding/onboarding_moderation":"src/Components/Onboarding/onboarding_moderation.js","./Components/Onboarding/onboarding_voice":"src/Components/Onboarding/onboarding_voice.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -59466,7 +59749,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61626" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54479" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

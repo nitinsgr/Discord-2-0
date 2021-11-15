@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer';
 import Getting_started from './Components/Get_Started/Getting_started';
 import Header from './Components/Header';
 import Hero from './Components/Hero';
+import Nitro_Page from './Components/Nitro/Nitro_Page';
 import Onboarding_group from './Components/Onboarding/onboarding_group';
 import Onboarding_moderation from './Components/Onboarding/onboarding_moderation';
 import Onboarding_voice from './Components/Onboarding/onboarding_voice';
@@ -41,7 +42,10 @@ function App() {
    <Routes>
    <Route path="Download" element={<Download_Page/>}/>
    </Routes>
-
+   
+   <Routes>
+   <Route path="Nitro" element={<Nitro_Page/>}/>
+   </Routes>
 
       </div>
   

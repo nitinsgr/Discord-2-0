@@ -45,7 +45,7 @@ const DownloadHeader = () => {
       </a>
      <div className="hidden lg:flex space-x-6 text-white">
         <Link to="/Download"><MenuLink>Download</MenuLink></Link>
-        <MenuLink>Nitro</MenuLink>
+        <Link to="/Nitro"><MenuLink>Nitro</MenuLink></Link>
         <MenuLink>Safety</MenuLink>
         <MenuLink>Support</MenuLink>
         <MenuLink>Blog</MenuLink>
