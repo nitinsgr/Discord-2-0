@@ -41796,6 +41796,12 @@ var _default = Download_Hero;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../Images/Illustration6.png":"src/Images/Illustration6.png"}],"src/Images/CardIos.png":[function(require,module,exports) {
 module.exports = "/CardIos.ad9e413f.png";
+},{}],"src/Images/Illustration7.png":[function(require,module,exports) {
+module.exports = "/Illustration7.afb700ab.png";
+},{}],"src/Images/illustration8.png":[function(require,module,exports) {
+module.exports = "/illustration8.a3bd475d.png";
+},{}],"src/Images/illustration10.png":[function(require,module,exports) {
+module.exports = "/illustration10.8b6769ef.png";
 },{}],"src/Components/Download/Masonry_Layout.js":[function(require,module,exports) {
 "use strict";
 
@@ -41810,12 +41816,16 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _CardIos = _interopRequireDefault(require("../../Images/CardIos.png"));
 
+var _Illustration = _interopRequireDefault(require("../../Images/Illustration7.png"));
+
+var _illustration = _interopRequireDefault(require("../../Images/illustration8.png"));
+
+var _illustration2 = _interopRequireDefault(require("../../Images/illustration10.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const MainWrapper = _styledComponents.default.div`
-height: 80vh;
-display: flex;
-flex-direction: row;
+height: 100vh;
 `;
 const CardIos = _styledComponents.default.div`
 margin-top: 20px;
@@ -41842,19 +41852,124 @@ border-radius: 50px;
 cursor: pointer;
 `;
 const CardIosImage = _styledComponents.default.img`
-width: 70%;
+width: 50%;
 margin-top: 40px;
+`;
+const CardAndroid = _styledComponents.default.div`
+margin-top: 20px;
+margin-left: 20px;
+height: 600px;
+width: 500px;
+border-radius: 20px;
+background-color: #F9F9F9;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+`;
+const CardLinux = _styledComponents.default.div`
+margin-top: 20px;
+margin-left: 20px;
+height: 500px;
+width: 500px;
+border-radius: 20px;
+background-color: #F9F9F9;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+transform: translateX(100px);
+`;
+const CardMac = _styledComponents.default.div`
+margin-left: 20px;
+height: 500px;
+width: 500px;
+border-radius: 20px;
+background-color: #F9F9F9;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+transform: translateY(50px);
+`;
+const CardAndroidImage = _styledComponents.default.img`
+width: 40%;
+padding-top: 30px;
+`;
+const CardLinuxImage = _styledComponents.default.img`
+width: 70%;
+padding-top: 30px;
+transform: translateY(40px);
+`;
+const CardAndroidHeading = _styledComponents.default.h2`
+font-size: 24px;
+font-weight: 800;
+
+`;
+const CardAndroidButton = _styledComponents.default.button`
+padding: 12px 16px;
+color: white;
+background-color: black;
+border-radius: 50px;
+cursor: pointer;
+`;
+const CardMacHeading = _styledComponents.default.h2`
+font-size: 24px;
+font-weight: 800;
+`;
+const CardMacButton = _styledComponents.default.button`
+padding: 12px 16px;
+color: white;
+background-color: black;
+border-radius: 50px;
+cursor: pointer;
+`;
+const CardMacImage = _styledComponents.default.img``;
+const LinksWrapper = _styledComponents.default.div`
+height: 40vh;
+background-color: #5865F2;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+`;
+const LinkHeading = _styledComponents.default.h1`
+font-size: 52px;
+color: white;
+font-weight: 800;
+
+
+`;
+const LinkContent = _styledComponents.default.p`
+font-size: 24px;
+color: white;
 `;
 
 const Masonry_Layout = () => {
-  return /*#__PURE__*/_react.default.createElement(MainWrapper, null, /*#__PURE__*/_react.default.createElement(CardIos, null, /*#__PURE__*/_react.default.createElement(CardIosHeading, null, "IOS"), /*#__PURE__*/_react.default.createElement(CardIosButton, null, "Download"), /*#__PURE__*/_react.default.createElement(CardIosImage, {
+  return /*#__PURE__*/_react.default.createElement(MainWrapper, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "grid grid-cols-6 gap-4 align-middle"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-start-3 col-span-4 ..."
+  }, /*#__PURE__*/_react.default.createElement(CardIos, null, /*#__PURE__*/_react.default.createElement(CardIosHeading, null, "IOS"), /*#__PURE__*/_react.default.createElement(CardIosButton, null, "Download"), /*#__PURE__*/_react.default.createElement(CardIosImage, {
     src: _CardIos.default
-  })));
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-start-2 col-end-3 ..."
+  }, /*#__PURE__*/_react.default.createElement(CardAndroid, null, /*#__PURE__*/_react.default.createElement(CardIosHeading, null, "Android"), /*#__PURE__*/_react.default.createElement(CardIosButton, null, "Download"), /*#__PURE__*/_react.default.createElement(CardAndroidImage, {
+    src: _Illustration.default
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-end-6 col-span-2 ..."
+  }, /*#__PURE__*/_react.default.createElement(CardLinux, null, /*#__PURE__*/_react.default.createElement(CardAndroidHeading, null, "Linux"), /*#__PURE__*/_react.default.createElement(CardAndroidButton, null, "Download"), /*#__PURE__*/_react.default.createElement(CardLinuxImage, {
+    src: _illustration.default
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-start-4 pb-40  col-end-3 col-span-4 ..."
+  }, /*#__PURE__*/_react.default.createElement(CardMac, null, /*#__PURE__*/_react.default.createElement(CardMacHeading, null, "Mac os"), /*#__PURE__*/_react.default.createElement(CardMacButton, null, "Download"), /*#__PURE__*/_react.default.createElement(CardMacImage, {
+    src: _illustration2.default
+  })))), /*#__PURE__*/_react.default.createElement(LinksWrapper, null, /*#__PURE__*/_react.default.createElement(LinkHeading, null, "Feeling Experimental?"), /*#__PURE__*/_react.default.createElement(LinkContent, null, "Try our Public Test Build and test new features before they launch")));
 };
 
 var _default = Masonry_Layout;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../Images/CardIos.png":"src/Images/CardIos.png"}],"src/Components/Download/Download_Page.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../Images/CardIos.png":"src/Images/CardIos.png","../../Images/Illustration7.png":"src/Images/Illustration7.png","../../Images/illustration8.png":"src/Images/illustration8.png","../../Images/illustration10.png":"src/Images/illustration10.png"}],"src/Components/Download/Download_Page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -59349,7 +59464,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63868" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63363" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
