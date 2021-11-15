@@ -4,6 +4,7 @@ import Illustration from '../../Images/CardIos.png'
 import Android from '../../Images/Illustration7.png'
 import Linux from '../../Images/illustration8.png'
 import Mac from '../../Images/illustration10.png'
+import Footer from '../Footer/Footer'
 
 const MainWrapper = styled.div`
 height: 100vh;
@@ -143,8 +144,6 @@ color: white;
 `
 
 
-
-
 const Masonry_Layout = () => {
     return (
         <MainWrapper>
@@ -209,6 +208,8 @@ const Masonry_Layout = () => {
               </LinkContent>
             
             </LinksWrapper>
+
+            <Footer/>
 
             
         </MainWrapper>
