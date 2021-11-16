@@ -27,6 +27,14 @@ height: 60vh;
 @media screen and (max-width: 820px) and (min-width: 640px){
   height: 70vh;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    height: 100vh;
+}
 `
 
 const ContentWrapper = styled.div`
@@ -50,6 +58,13 @@ z-index: 1;
 @media screen and (max-width: 820px) and (min-width: 640px){
   font-size: 50px;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 50px;
+}
 `
 
 const TextWrapper = styled.p`
@@ -64,6 +79,15 @@ color: white;
 @media screen and (max-width: 820px) and (min-width: 640px){
   font-size: 18px;
   width: 80%;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 15px;
+    text-align: left;
 }
 
 `
@@ -81,6 +105,8 @@ align-items: center;
 
 }
 
+
+
 `
 
 const WindowsButton = styled.button`
@@ -97,6 +123,15 @@ flex-direction: row;
 
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 15px;
+    padding: 8px 16px;
+}
+
 
 @media screen and (max-width: 820px) and (min-width: 640px){
   font-size: 15px;
@@ -106,6 +141,11 @@ flex-direction: row;
 &:hover{
   box-shadow: 1px 2px 2px 2px;
   transition: 1ms all ease-in;
+}
+
+@media screen and (max-width: 768px){
+  font-size: 15px;
+  padding: 8px 16px;
 }
 
 `

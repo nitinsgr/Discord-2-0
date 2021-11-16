@@ -12,6 +12,27 @@ display: flex;
 @media screen and (max-width: 820px) and (min-width: 640px){
  display: flex;
  flex-direction: column;
+ justify-content: left;
+ align-items: left;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: -40px;
+
+}
+
+@media screen and (max-width: 768px){
+    height: 100vh;
+    
 }
 `
 
@@ -20,12 +41,32 @@ width: 60%;
 align-items: center;
 justify-content: center;
 transform: translate(300px, 100px);
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center
+    
+}
 `
 
 const RightWrapper = styled.div`
 display: flex;
 flex-direction: column;
 width: 40%;
+
+@media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 `
 
 const SectionHeader = styled.h1`
@@ -33,15 +74,60 @@ font-size: 50px;
 font-family: 'DM Sans', sans-serif;
 font-weight: 800;
 line-height: 65px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 32px;
+    line-height: 30px;
+    width: 80%;
+
+}
+
+@media screen and (max-width: 768px){
+   font-size: 25px;
+   line-height: 40px;
+    
+}
 `
 
 const SectionContent = styled.p`
 width: 50%;
 padding-top: 20px;
 font-size: 18px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 15px;
+    width: 50%;
+    padding: 30px;
+    
+}
+@media screen and (max-width: 768px){
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 `
 
-const Image = styled.img``
+
+const Image = styled.img`
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: none;
+    
+}
+`
 
 const Onboarding_group = () => {
     return (
@@ -51,10 +137,7 @@ const Onboarding_group = () => {
            </LeftWrapper>
            <RightWrapper className="pt-32">
                 <SectionHeader>
-                    Create an <br/>
-                    invite-only <br/>
-                    place where you <br/>
-                    belong
+                    Create an invite-only place where you belong
                     
                 </SectionHeader>
                 <SectionContent>

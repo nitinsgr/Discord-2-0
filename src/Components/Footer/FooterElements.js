@@ -4,6 +4,16 @@ import styled from "styled-components";
 export const Container = styled.div`
 background-color: #23272a;
 height: 60vh;
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
 `
 
 export const FooterSection = styled.div`
@@ -95,7 +105,16 @@ padding-top: 20px;
 
 export const ContentSection = styled.div``
 
-export const Product = styled.div``
+export const Product = styled.div`
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+}
+`
 
 export const Company = styled.div`
 margin-top: 20px;

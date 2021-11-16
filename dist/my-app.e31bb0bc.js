@@ -41819,6 +41819,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const Container = _styledComponents.default.div`
 background-color: #23272a;
 height: 60vh;
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
 `;
 exports.Container = Container;
 const FooterSection = _styledComponents.default.div`
@@ -41909,7 +41919,16 @@ padding-top: 20px;
 exports.SocialIcons = SocialIcons;
 const ContentSection = _styledComponents.default.div``;
 exports.ContentSection = ContentSection;
-const Product = _styledComponents.default.div``;
+const Product = _styledComponents.default.div`
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+}
+`;
 exports.Product = Product;
 const Company = _styledComponents.default.div`
 margin-top: 20px;
@@ -58794,12 +58813,22 @@ var _illustration = _interopRequireDefault(require("../../Images/illustration5.p
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const Container = _styledComponents.default.div`
-height: 120vh;
+height: 110vh;
 background-color: #f6f6f6;
 justify-content: center;
 align-items: center;
 display: flex;
 flex-direction: column;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    justify-content: center;
+    align-items: center;    
+    display: flex;
+    flex-direction: column;
+}
 
 `;
 const Heading = _styledComponents.default.h1`
@@ -58808,12 +58837,34 @@ padding-top: 100px;
 font-family: 'Paytone One', sans-serif;
 font-size: 58px;
 font-weight: 900;
+text-align: center;
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 28px;
+    padding-top: 10px;
+}
 
 `;
 const SubHeading = _styledComponents.default.p`
 font-size: 20px;
 text-align: center;
 width: 60%;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    padding-top: 20px;
+}
 `;
 const Image = _styledComponents.default.img`
 padding-top: 40px;
@@ -58825,11 +58876,27 @@ justify-content: center;
 align-items: center;
 display: flex;
 flex-direction: column;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    padding-top: 30px;
+}
 `;
 const JourneyHeading = _styledComponents.default.h1`
 font-size: 32px;
 font-weight: 800;
 font-family: 'DM Sans', sans-serif;
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 24px;
+    text-align: center;
+}
 `;
 const WindowButton = _styledComponents.default.button`
 margin-top: 20px;
@@ -58838,6 +58905,14 @@ border-radius: 50px;
 background-color: #295DE7;
 color: white;
 padding: 12px 32px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 15px;
+    padding: 8px 24px;
+}
 `;
 
 const Getting_started = () => {
@@ -58974,6 +59049,14 @@ height: 60vh;
 @media screen and (max-width: 820px) and (min-width: 640px){
   height: 70vh;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    height: 100vh;
+}
 `;
 const ContentWrapper = _styledComponents.default.div`
 padding-top: 120px;
@@ -58995,6 +59078,13 @@ z-index: 1;
 @media screen and (max-width: 820px) and (min-width: 640px){
   font-size: 50px;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 50px;
+}
 `;
 const TextWrapper = _styledComponents.default.p`
 justify-content: center;
@@ -59008,6 +59098,15 @@ color: white;
 @media screen and (max-width: 820px) and (min-width: 640px){
   font-size: 18px;
   width: 80%;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 15px;
+    text-align: left;
 }
 
 `;
@@ -59025,6 +59124,8 @@ align-items: center;
 
 }
 
+
+
 `;
 const WindowsButton = _styledComponents.default.button`
 border-radius: 50px;
@@ -59040,6 +59141,15 @@ flex-direction: row;
 
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 15px;
+    padding: 8px 16px;
+}
+
 
 @media screen and (max-width: 820px) and (min-width: 640px){
   font-size: 15px;
@@ -59049,6 +59159,11 @@ flex-direction: row;
 &:hover{
   box-shadow: 1px 2px 2px 2px;
   transition: 1ms all ease-in;
+}
+
+@media screen and (max-width: 768px){
+  font-size: 15px;
+  padding: 8px 16px;
 }
 
 `;
@@ -59396,6 +59511,27 @@ display: flex;
 @media screen and (max-width: 820px) and (min-width: 640px){
  display: flex;
  flex-direction: column;
+ justify-content: left;
+ align-items: left;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: -40px;
+
+}
+
+@media screen and (max-width: 768px){
+    height: 100vh;
+    
 }
 `;
 const LeftWrapper = _styledComponents.default.div`
@@ -59403,24 +59539,88 @@ width: 60%;
 align-items: center;
 justify-content: center;
 transform: translate(300px, 100px);
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center
+    
+}
 `;
 const RightWrapper = _styledComponents.default.div`
 display: flex;
 flex-direction: column;
 width: 40%;
+
+@media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 `;
 const SectionHeader = _styledComponents.default.h1`
 font-size: 50px;
 font-family: 'DM Sans', sans-serif;
 font-weight: 800;
 line-height: 65px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 32px;
+    line-height: 30px;
+    width: 80%;
+
+}
+
+@media screen and (max-width: 768px){
+   font-size: 25px;
+   line-height: 40px;
+    
+}
 `;
 const SectionContent = _styledComponents.default.p`
 width: 50%;
 padding-top: 20px;
 font-size: 18px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 15px;
+    width: 50%;
+    padding: 30px;
+    
+}
+@media screen and (max-width: 768px){
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 `;
-const Image = _styledComponents.default.img``;
+const Image = _styledComponents.default.img`
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: none;
+    
+}
+`;
 
 const Onboarding_group = () => {
   return /*#__PURE__*/_react.default.createElement(MainWrapper, {
@@ -59429,7 +59629,7 @@ const Onboarding_group = () => {
     src: _illustration.default
   })), /*#__PURE__*/_react.default.createElement(RightWrapper, {
     className: "pt-32"
-  }, /*#__PURE__*/_react.default.createElement(SectionHeader, null, "Create an ", /*#__PURE__*/_react.default.createElement("br", null), "invite-only ", /*#__PURE__*/_react.default.createElement("br", null), "place where you ", /*#__PURE__*/_react.default.createElement("br", null), "belong"), /*#__PURE__*/_react.default.createElement(SectionContent, null, "Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.")));
+  }, /*#__PURE__*/_react.default.createElement(SectionHeader, null, "Create an invite-only place where you belong"), /*#__PURE__*/_react.default.createElement(SectionContent, null, "Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.")));
 };
 
 var _default = Onboarding_group;
@@ -59462,40 +59662,100 @@ display: flex;
  display: flex;
  flex-direction: column;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+}
 `;
 const LeftWrapper = _styledComponents.default.div`
 width: 60%;
 align-items: center;
 justify-content: center;
 transform: translate(300px, 100px);
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    transform: translate(0, 0);
+    display: none;
+}
 `;
 const RightWrapper = _styledComponents.default.div`
 display: flex;
 flex-direction: column;
 width: 40%;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
 `;
 const SectionHeader = _styledComponents.default.h1`
 font-size: 50px;
 font-family: 'DM Sans', sans-serif;
 font-weight: 800;
 line-height: 65px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 30px;
+    line-height: 40px;
+    width: 80%;
+}
 `;
 const SectionContent = _styledComponents.default.p`
 width: 50%;
 padding-top: 20px;
 font-size: 20px;
 font-weight: 400;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 18px;
+    width: 80%;  
+    text-align: left;
+    
+}
 `;
-const Image = _styledComponents.default.img``;
+const Image = _styledComponents.default.img`
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    
+}
+`;
 
 const Onboarding_moderation = () => {
   return /*#__PURE__*/_react.default.createElement(MainWrapper, {
-    className: ""
+    className: "pt-20"
   }, /*#__PURE__*/_react.default.createElement(LeftWrapper, null, /*#__PURE__*/_react.default.createElement(Image, {
     src: _illustration.default
   })), /*#__PURE__*/_react.default.createElement(RightWrapper, {
-    className: "pt-32"
-  }, /*#__PURE__*/_react.default.createElement(SectionHeader, null, "From few to a ", /*#__PURE__*/_react.default.createElement("br", null), "fandom"), /*#__PURE__*/_react.default.createElement(SectionContent, null, "Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.")));
+    className: "pt-20"
+  }, /*#__PURE__*/_react.default.createElement(SectionHeader, null, "From few to a fandom"), /*#__PURE__*/_react.default.createElement(SectionContent, null, "Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.")));
 };
 
 var _default = Onboarding_moderation;
@@ -59522,22 +59782,83 @@ const MainWrapper = _styledComponents.default.div`
 height: 90vh;
 background-color: #f6f6f6;
 padding: 30px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    padding: 0;
+    height: 80vh;
+}
+
+@media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 `;
 const LeftWrapper = _styledComponents.default.div`
 transform: translateX(320px);
 justify-content: center;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+  
+    transform: translateX(0px);
+    padding-left: 0px;
+    transform: translateX(-20px);
+}
+
+@media screen and (max-width: 768px){
+    display: flex; 
+}
 `;
 const RightWrapper = _styledComponents.default.div`
 justify-content:center;
 align-items: center;
 transform: translateX(-250px);
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: none;
+    transform: translateX(0px);
+    
+}
 `;
-const LeftHeader = _styledComponents.default.div`
+const LeftHeader = _styledComponents.default.h1`
 font-size: 48px;
 font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 padding-top: 100px;
 line-height: 70px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 32px;
+    line-height: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-40px);
+    padding-top: 20px;
+    
+}
+
+@media screen and (max-width: 768px){
+    font-size: 28px;
+    line-height: 40px;
+    padding-top: 200px;
+}
 `;
 const LeftContent = _styledComponents.default.p`
 width: 32%;
@@ -59546,18 +59867,47 @@ align-items: left;
 text-align: left;
 font-size:20px;
 font-weight: 400;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+ font-size: 15px;
+ width: 80%;
+ transform: translateX(-40px);
+    
+}
+
+@media screen and (max-width: 768px){
+    font-size: 20px;
+    width: 80%;
+}
+
 `;
 const Image = _styledComponents.default.img`
 justify-content: center;
 width: 800px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: none;
+    
+}
+
+@media screen and (max-width: 768px){
+    width: 1800px;
+    transform: translateY(-200px);
+}
 `;
 
 const Onboarding_voice = () => {
   return /*#__PURE__*/_react.default.createElement(MainWrapper, {
-    className: "flex flex-row justify-items-center"
+    className: "flex flex-row justify-items-center pb-20"
   }, /*#__PURE__*/_react.default.createElement(LeftWrapper, {
-    className: " flex flex-col pb-10 pt-0 pl-20"
-  }, /*#__PURE__*/_react.default.createElement(LeftHeader, null, "Where hanging ", /*#__PURE__*/_react.default.createElement("br", null), "out is easy"), /*#__PURE__*/_react.default.createElement(LeftContent, {
+    className: " flex flex-col pb-10 pt-0 pl-20 sm:pl-0"
+  }, /*#__PURE__*/_react.default.createElement(LeftHeader, null, "Where hanging  out is easy"), /*#__PURE__*/_react.default.createElement(LeftContent, {
     className: "pt-5"
   }, "Grab a seat in a voice channel when you\u2019re free. Friends in your server can see you\u2019re around and instantly pop in to talk without having to call.")), /*#__PURE__*/_react.default.createElement(RightWrapper, {
     className: "justify-items-center flex flex-col align-middle"
@@ -59619,9 +59969,6 @@ function App() {
   })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Routes, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/",
     element: /*#__PURE__*/_react.default.createElement(_Getting_started.default, null)
-  })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Routes, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/",
-    element: /*#__PURE__*/_react.default.createElement(_Footer.default, null)
   })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Routes, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "Download",
     element: /*#__PURE__*/_react.default.createElement(_Download_Page.default, null)
@@ -59749,7 +60096,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54479" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58215" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

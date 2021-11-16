@@ -6,25 +6,86 @@ const MainWrapper = styled.div`
 height: 90vh;
 background-color: #f6f6f6;
 padding: 30px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    padding: 0;
+    height: 80vh;
+}
+
+@media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 `
 
 const LeftWrapper = styled.div`
 transform: translateX(320px);
 justify-content: center;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: flex;
+    flex-direction: column;
+  
+    transform: translateX(0px);
+    padding-left: 0px;
+    transform: translateX(-20px);
+}
+
+@media screen and (max-width: 768px){
+    display: flex; 
+}
 `
 
 const RightWrapper = styled.div`
 justify-content:center;
 align-items: center;
 transform: translateX(-250px);
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: none;
+    transform: translateX(0px);
+    
+}
 `
 
-const LeftHeader = styled.div`
+const LeftHeader = styled.h1`
 font-size: 48px;
 font-family: 'DM Sans', sans-serif;
 font-weight: 700;
 padding-top: 100px;
 line-height: 70px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    font-size: 32px;
+    line-height: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-40px);
+    padding-top: 20px;
+    
+}
+
+@media screen and (max-width: 768px){
+    font-size: 28px;
+    line-height: 40px;
+    padding-top: 200px;
+}
 `
 
 const LeftContent = styled.p`
@@ -34,22 +95,50 @@ align-items: left;
 text-align: left;
 font-size:20px;
 font-weight: 400;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+ font-size: 15px;
+ width: 80%;
+ transform: translateX(-40px);
+    
+}
+
+@media screen and (max-width: 768px){
+    font-size: 20px;
+    width: 80%;
+}
+
 `
 
 const Image = styled.img`
 justify-content: center;
 width: 800px;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    display: none;
+    
+}
+
+@media screen and (max-width: 768px){
+    width: 1800px;
+    transform: translateY(-200px);
+}
 `
 
 
 const Onboarding_voice = () => {
     return (
-        <MainWrapper className="flex flex-row justify-items-center">
+        <MainWrapper className="flex flex-row justify-items-center pb-20">
         
-        <LeftWrapper className=" flex flex-col pb-10 pt-0 pl-20">
+        <LeftWrapper className=" flex flex-col pb-10 pt-0 pl-20 sm:pl-0">
             <LeftHeader>
-                Where hanging <br/>
-                out is easy
+                Where hanging  out is easy
             </LeftHeader>
             <LeftContent className="pt-5">
             Grab a seat in a voice channel when you’re free. 

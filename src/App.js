@@ -35,9 +35,7 @@ function App() {
    <Routes>
    <Route path="/" element={<Getting_started/>}/>
    </Routes>
-   <Routes>
-   <Route path="/" element={<Footer/>}/>
-   </Routes>
+  
 
    <Routes>
    <Route path="Download" element={<Download_Page/>}/>
