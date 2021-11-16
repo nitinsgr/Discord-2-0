@@ -50,21 +50,27 @@ transform: translate(300px, 100px);
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    align-items: center
+    align-items: center;
+   
     
+}
+
+@media screen and (max-width: 768px){
+  width: 100%;
+  transform: translate(0px, 0px);
 }
 `
 
 const RightWrapper = styled.div`
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
 width: 40%;
 
 @media screen and (max-width: 768px){
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 `
@@ -88,6 +94,9 @@ line-height: 65px;
 @media screen and (max-width: 768px){
    font-size: 25px;
    line-height: 40px;
+   width: 50%;
+
+   
     
 }
 `
@@ -103,16 +112,13 @@ font-size: 18px;
   {
     font-size: 15px;
     width: 50%;
-    padding: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
     
 }
 @media screen and (max-width: 768px){
     font-size: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
     
 }
 `
@@ -126,6 +132,10 @@ const Image = styled.img`
   {
     display: none;
     
+}
+
+@media screen and (max-width:768px){
+
 }
 `
 

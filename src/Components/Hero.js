@@ -11,7 +11,11 @@ justify-content: center;
 
 &::after{
   background-image: url(${illustation});
-  z-index: 2;
+  z-index: 1;
+}
+
+@media screen and (max-width: 820px) and (min-width: 640px){
+  max-width: 100%;
 }
 
 `

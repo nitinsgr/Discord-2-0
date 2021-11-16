@@ -18,7 +18,8 @@ padding: 30px;
 @media screen and (max-width: 768px){
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -26,7 +27,9 @@ padding: 30px;
 
 const LeftWrapper = styled.div`
 transform: translateX(320px);
-justify-content: center;
+display: flex;
+flex-direction: column;
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -41,7 +44,8 @@ justify-content: center;
 }
 
 @media screen and (max-width: 768px){
-    display: flex; 
+    transform: translateX(0px);
+    width: 80%;
 }
 `
 
@@ -55,8 +59,12 @@ transform: translateX(-250px);
   and (-webkit-min-device-pixel-ratio: 2) 
   {
     display: none;
-    transform: translateX(0px);
     
+    
+}
+@media screen and (max-width: 768px){
+  transform: translateX(0px);
+
 }
 `
 
@@ -76,7 +84,6 @@ line-height: 70px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    transform: translateX(-40px);
     padding-top: 20px;
     
 }
@@ -84,7 +91,9 @@ line-height: 70px;
 @media screen and (max-width: 768px){
     font-size: 28px;
     line-height: 40px;
-    padding-top: 200px;
+    justify-content: left;
+    align-items: left;
+    
 }
 `
 
@@ -101,20 +110,19 @@ font-weight: 400;
   and (-webkit-min-device-pixel-ratio: 2) 
   {
  font-size: 15px;
- width: 80%;
- transform: translateX(-40px);
+ width: 100%;
+
     
 }
 
 @media screen and (max-width: 768px){
-    font-size: 20px;
-    width: 80%;
+    font-size: 18px;
+    width: 100%;
 }
 
 `
 
 const Image = styled.img`
-justify-content: center;
 width: 800px;
 @media only screen 
   and (min-device-width: 320px) 
@@ -126,17 +134,17 @@ width: 800px;
 }
 
 @media screen and (max-width: 768px){
-    width: 1800px;
-    transform: translateY(-200px);
+    width: 80%;
+   
 }
 `
 
 
 const Onboarding_voice = () => {
     return (
-        <MainWrapper className="flex flex-row justify-items-center pb-20">
+        <MainWrapper className="justify-items-center pb-20">
         
-        <LeftWrapper className=" flex flex-col pb-10 pt-0 pl-20 sm:pl-0">
+        <LeftWrapper className=" flex flex-col pb-10 pt-0 pl-20 ">
             <LeftHeader>
                 Where hanging  out is easy
             </LeftHeader>
@@ -146,7 +154,7 @@ const Onboarding_voice = () => {
             </LeftContent>
         </LeftWrapper>
 
-        <RightWrapper className="justify-items-center flex flex-col align-middle">
+        <RightWrapper className="">
             <Image src={illustration}/>
         </RightWrapper>
         

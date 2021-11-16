@@ -21,6 +21,10 @@ display: flex;
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 768px){
+  height: 100vh;
+}
 `
 
 const LeftWrapper = styled.div`
@@ -35,6 +39,14 @@ transform: translate(300px, 100px);
   {
     transform: translate(0, 0);
     display: none;
+}
+
+@media screen and (max-width:768px){
+  transform: translate(0px, 0px);
+  justify-content: center;  
+  align-items: center;
+  display: flex;
+  width: 100%;
 }
 `
 
@@ -51,9 +63,16 @@ width: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     
 }
+
+@media screen and (max-width: 768px){
+    width: 100%;
+    justify-content: center;
+    align-items: center;  
+    padding-bottom: 60px;
+  } 
 
 `
 
@@ -71,6 +90,9 @@ line-height: 65px;
     line-height: 40px;
     width: 80%;
 }
+@media screen and (max-width: 768px){
+    font-size: 35px;
+  } 
 `
 
 const SectionContent = styled.p`
@@ -88,6 +110,10 @@ font-weight: 400;
     text-align: left;
     
 }
+
+@media screen and (max-width: 768px){
+  
+}
 `
 
 const Image = styled.img`
@@ -100,8 +126,8 @@ const Image = styled.img`
 }
 
 @media screen and (max-width: 768px){
-    
-}
+    width: 80%;
+} 
 `
 
 const Onboarding_moderation = () => {

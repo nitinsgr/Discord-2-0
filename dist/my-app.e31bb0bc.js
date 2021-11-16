@@ -59034,7 +59034,11 @@ justify-content: center;
 
 &::after{
   background-image: url(${_illustation.default});
-  z-index: 2;
+  z-index: 1;
+}
+
+@media screen and (max-width: 820px) and (min-width: 640px){
+  max-width: 100%;
 }
 
 `;
@@ -59548,20 +59552,26 @@ transform: translate(300px, 100px);
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    align-items: center
+    align-items: center;
+   
     
+}
+
+@media screen and (max-width: 768px){
+  width: 100%;
+  transform: translate(0px, 0px);
 }
 `;
 const RightWrapper = _styledComponents.default.div`
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
 width: 40%;
 
 @media screen and (max-width: 768px){
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 `;
@@ -59584,6 +59594,9 @@ line-height: 65px;
 @media screen and (max-width: 768px){
    font-size: 25px;
    line-height: 40px;
+   width: 50%;
+
+   
     
 }
 `;
@@ -59598,16 +59611,13 @@ font-size: 18px;
   {
     font-size: 15px;
     width: 50%;
-    padding: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
     
 }
 @media screen and (max-width: 768px){
     font-size: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
     
 }
 `;
@@ -59619,6 +59629,10 @@ const Image = _styledComponents.default.img`
   {
     display: none;
     
+}
+
+@media screen and (max-width:768px){
+
 }
 `;
 
@@ -59670,6 +59684,10 @@ display: flex;
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 768px){
+  height: 100vh;
+}
 `;
 const LeftWrapper = _styledComponents.default.div`
 width: 60%;
@@ -59683,6 +59701,14 @@ transform: translate(300px, 100px);
   {
     transform: translate(0, 0);
     display: none;
+}
+
+@media screen and (max-width:768px){
+  transform: translate(0px, 0px);
+  justify-content: center;  
+  align-items: center;
+  display: flex;
+  width: 100%;
 }
 `;
 const RightWrapper = _styledComponents.default.div`
@@ -59698,9 +59724,16 @@ width: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     
 }
+
+@media screen and (max-width: 768px){
+    width: 100%;
+    justify-content: center;
+    align-items: center;  
+    padding-bottom: 60px;
+  } 
 
 `;
 const SectionHeader = _styledComponents.default.h1`
@@ -59717,6 +59750,9 @@ line-height: 65px;
     line-height: 40px;
     width: 80%;
 }
+@media screen and (max-width: 768px){
+    font-size: 35px;
+  } 
 `;
 const SectionContent = _styledComponents.default.p`
 width: 50%;
@@ -59733,6 +59769,10 @@ font-weight: 400;
     text-align: left;
     
 }
+
+@media screen and (max-width: 768px){
+  
+}
 `;
 const Image = _styledComponents.default.img`
 @media only screen 
@@ -59744,8 +59784,8 @@ const Image = _styledComponents.default.img`
 }
 
 @media screen and (max-width: 768px){
-    
-}
+    width: 80%;
+} 
 `;
 
 const Onboarding_moderation = () => {
@@ -59794,14 +59834,17 @@ padding: 30px;
 @media screen and (max-width: 768px){
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 
 `;
 const LeftWrapper = _styledComponents.default.div`
 transform: translateX(320px);
-justify-content: center;
+display: flex;
+flex-direction: column;
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -59816,7 +59859,8 @@ justify-content: center;
 }
 
 @media screen and (max-width: 768px){
-    display: flex; 
+    transform: translateX(0px);
+    width: 80%;
 }
 `;
 const RightWrapper = _styledComponents.default.div`
@@ -59829,8 +59873,12 @@ transform: translateX(-250px);
   and (-webkit-min-device-pixel-ratio: 2) 
   {
     display: none;
-    transform: translateX(0px);
     
+    
+}
+@media screen and (max-width: 768px){
+  transform: translateX(0px);
+
 }
 `;
 const LeftHeader = _styledComponents.default.h1`
@@ -59849,7 +59897,6 @@ line-height: 70px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    transform: translateX(-40px);
     padding-top: 20px;
     
 }
@@ -59857,7 +59904,9 @@ line-height: 70px;
 @media screen and (max-width: 768px){
     font-size: 28px;
     line-height: 40px;
-    padding-top: 200px;
+    justify-content: left;
+    align-items: left;
+    
 }
 `;
 const LeftContent = _styledComponents.default.p`
@@ -59873,19 +59922,18 @@ font-weight: 400;
   and (-webkit-min-device-pixel-ratio: 2) 
   {
  font-size: 15px;
- width: 80%;
- transform: translateX(-40px);
+ width: 100%;
+
     
 }
 
 @media screen and (max-width: 768px){
-    font-size: 20px;
-    width: 80%;
+    font-size: 18px;
+    width: 100%;
 }
 
 `;
 const Image = _styledComponents.default.img`
-justify-content: center;
 width: 800px;
 @media only screen 
   and (min-device-width: 320px) 
@@ -59897,20 +59945,20 @@ width: 800px;
 }
 
 @media screen and (max-width: 768px){
-    width: 1800px;
-    transform: translateY(-200px);
+    width: 80%;
+   
 }
 `;
 
 const Onboarding_voice = () => {
   return /*#__PURE__*/_react.default.createElement(MainWrapper, {
-    className: "flex flex-row justify-items-center pb-20"
+    className: "justify-items-center pb-20"
   }, /*#__PURE__*/_react.default.createElement(LeftWrapper, {
-    className: " flex flex-col pb-10 pt-0 pl-20 sm:pl-0"
+    className: " flex flex-col pb-10 pt-0 pl-20 "
   }, /*#__PURE__*/_react.default.createElement(LeftHeader, null, "Where hanging  out is easy"), /*#__PURE__*/_react.default.createElement(LeftContent, {
     className: "pt-5"
   }, "Grab a seat in a voice channel when you\u2019re free. Friends in your server can see you\u2019re around and instantly pop in to talk without having to call.")), /*#__PURE__*/_react.default.createElement(RightWrapper, {
-    className: "justify-items-center flex flex-col align-middle"
+    className: ""
   }, /*#__PURE__*/_react.default.createElement(Image, {
     src: _illustration.default
   })));
@@ -60096,7 +60144,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58215" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59438" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
