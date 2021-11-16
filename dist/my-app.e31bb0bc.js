@@ -58830,6 +58830,10 @@ flex-direction: column;
     flex-direction: column;
 }
 
+@media screen and (max-width: 768px){
+  height: 150vh;
+}
+
 `;
 const Heading = _styledComponents.default.h1`
 
@@ -58865,6 +58869,11 @@ width: 60%;
     width: 100%;
     padding-top: 20px;
 }
+
+@media screen and (max-width: 768px){
+  font-size: 20px;
+  text-align: left;
+}
 `;
 const Image = _styledComponents.default.img`
 padding-top: 40px;
@@ -58896,6 +58905,10 @@ font-family: 'DM Sans', sans-serif;
   {
     font-size: 24px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  font-size: 18px;
 }
 `;
 const WindowButton = _styledComponents.default.button`
@@ -59565,8 +59578,6 @@ transform: translate(300px, 100px);
 const RightWrapper = _styledComponents.default.div`
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
 width: 40%;
 
 @media screen and (max-width: 768px){
@@ -59577,6 +59588,7 @@ width: 40%;
 `;
 const SectionHeader = _styledComponents.default.h1`
 font-size: 50px;
+width: 60%;
 font-family: 'DM Sans', sans-serif;
 font-weight: 800;
 line-height: 65px;
@@ -59751,7 +59763,7 @@ line-height: 65px;
     width: 80%;
 }
 @media screen and (max-width: 768px){
-    font-size: 35px;
+    font-size: 30px;
   } 
 `;
 const SectionContent = _styledComponents.default.p`
@@ -59820,6 +59832,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const MainWrapper = _styledComponents.default.div`
 height: 90vh;
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
 background-color: #f6f6f6;
 padding: 30px;
 @media only screen 
@@ -59841,10 +59856,10 @@ padding: 30px;
 
 `;
 const LeftWrapper = _styledComponents.default.div`
-transform: translateX(320px);
 display: flex;
 flex-direction: column;
-
+justify-content: center;
+align-items: center;
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -59864,9 +59879,12 @@ flex-direction: column;
 }
 `;
 const RightWrapper = _styledComponents.default.div`
-justify-content:center;
+transform: translateX(-100px);
+display: flex;
+flex-direction: column;
+justify-content: center;
 align-items: center;
-transform: translateX(-250px);
+transform: translateY(50px);
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -59910,7 +59928,7 @@ line-height: 70px;
 }
 `;
 const LeftContent = _styledComponents.default.p`
-width: 32%;
+width: 50%;
 justify-content: left;
 align-items: left;
 text-align: left;
@@ -59934,7 +59952,7 @@ font-weight: 400;
 
 `;
 const Image = _styledComponents.default.img`
-width: 800px;
+width: 100%;
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -60144,7 +60162,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59438" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55248" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -20,6 +20,10 @@ flex-direction: column;
     flex-direction: column;
 }
 
+@media screen and (max-width: 768px){
+  height: 150vh;
+}
+
 `
 
 const Heading = styled.h1`
@@ -56,6 +60,11 @@ width: 60%;
     width: 100%;
     padding-top: 20px;
 }
+
+@media screen and (max-width: 768px){
+  font-size: 20px;
+  text-align: left;
+}
 `
 
 const Image = styled.img`
@@ -90,6 +99,10 @@ font-family: 'DM Sans', sans-serif;
   {
     font-size: 24px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  font-size: 18px;
 }
 `
 

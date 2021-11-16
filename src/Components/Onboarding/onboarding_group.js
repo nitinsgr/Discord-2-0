@@ -64,8 +64,6 @@ transform: translate(300px, 100px);
 const RightWrapper = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
 width: 40%;
 
 @media screen and (max-width: 768px){
@@ -77,6 +75,7 @@ width: 40%;
 
 const SectionHeader = styled.h1`
 font-size: 50px;
+width: 60%;
 font-family: 'DM Sans', sans-serif;
 font-weight: 800;
 line-height: 65px;

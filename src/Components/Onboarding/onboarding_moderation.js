@@ -91,7 +91,7 @@ line-height: 65px;
     width: 80%;
 }
 @media screen and (max-width: 768px){
-    font-size: 35px;
+    font-size: 30px;
   } 
 `
 

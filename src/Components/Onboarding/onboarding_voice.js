@@ -4,6 +4,9 @@ import illustration from '../../Images/illustration3.png'
 
 const MainWrapper = styled.div`
 height: 90vh;
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
 background-color: #f6f6f6;
 padding: 30px;
 @media only screen 
@@ -26,10 +29,10 @@ padding: 30px;
 `
 
 const LeftWrapper = styled.div`
-transform: translateX(320px);
 display: flex;
 flex-direction: column;
-
+justify-content: center;
+align-items: center;
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -50,9 +53,12 @@ flex-direction: column;
 `
 
 const RightWrapper = styled.div`
-justify-content:center;
+transform: translateX(-100px);
+display: flex;
+flex-direction: column;
+justify-content: center;
 align-items: center;
-transform: translateX(-250px);
+transform: translateY(50px);
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -98,7 +104,7 @@ line-height: 70px;
 `
 
 const LeftContent = styled.p`
-width: 32%;
+width: 50%;
 justify-content: left;
 align-items: left;
 text-align: left;
@@ -123,7 +129,7 @@ font-weight: 400;
 `
 
 const Image = styled.img`
-width: 800px;
+width: 100%;
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
