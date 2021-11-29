@@ -1,5 +1,5 @@
 import React from 'react'
-import Nitro_Header from './Nitro_Header/Header'
+import Nitro_Header from './Header'
 import Logo from '../../Images/Discord-black.png'
 import {MenuIcon} from '@heroicons/react/outline'
 import {Link} from 'react-router-dom'
