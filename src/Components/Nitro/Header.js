@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Nitro from '../../../Images/Nitro.png'
+import Nitro from '../../Images/Nitro.png'
 
 const Container = styled.div`
 
