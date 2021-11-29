@@ -172,7 +172,7 @@ flex-direction: column;
 text-align: center;
 `
 
-const Nitro_Header = () => {
+const NitroHeader = () => {
     return (
         <Container>
           <MainWrapper>
@@ -242,4 +242,4 @@ const Nitro_Header = () => {
     )
 }
 
-export default Nitro_Header
+export default NitroHeader

@@ -1,5 +1,5 @@
 import React from 'react'
-import Nitro_Header from './Header'
+
 import Logo from '../../Images/Discord-black.png'
 import {MenuIcon} from '@heroicons/react/outline'
 import {Link} from 'react-router-dom'
@@ -44,7 +44,6 @@ const Nitro_Page = () => {
     return (
         <>
            <Navbar/>
-          <Nitro_Header/>
           <Footer/>
         </>
     
