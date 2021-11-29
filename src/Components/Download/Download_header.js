@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Logo from '../../Images/discord.png'
+import Logo from '../../Images/Discord.png'
 import {MenuIcon} from '@heroicons/react/outline'
 import {Link} from 'react-router-dom'
 const Image = styled.img`
